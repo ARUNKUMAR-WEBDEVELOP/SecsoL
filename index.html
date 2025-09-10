@@ -48,10 +48,10 @@
 
           <nav class="hidden lg:flex flex-1 justify-end gap-8" id="desktop-nav">
             <div class="flex items-center gap-8">
-              <a class="text-[var(--text-secondary)] hover:text-[var(--primary-color)] text-base font-medium leading-normal transition-colors" href="#">Home</a>
-              <a class="text-[var(--text-secondary)] hover:text-[var(--primary-color)] text-base font-medium leading-normal transition-colors" href="#">Services</a>
-              <a class="text-[var(--text-secondary)] hover:text-[var(--primary-color)] text-base font-medium leading-normal transition-colors" href="#">About Us</a>
-              <a class="text-[var(--text-secondary)] hover:text-[var(--primary-color)] text-base font-medium leading-normal transition-colors" href="#">Contact</a>
+              <a class="text-[var(--text-secondary)] hover:text-[var(--primary-color)] text-base font-medium leading-normal transition-colors" href="#Home">Home</a>
+              <a class="text-[var(--text-secondary)] hover:text-[var(--primary-color)] text-base font-medium leading-normal transition-colors" href="#Services">Services</a>
+              <a class="text-[var(--text-secondary)] hover:text-[var(--primary-color)] text-base font-medium leading-normal transition-colors" href="#About Us">About Us</a>
+              <a class="text-[var(--text-secondary)] hover:text-[var(--primary-color)] text-base font-medium leading-normal transition-colors" href="#Contact">Contact</a>
             </div>
             <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-md h-10 px-6 bg-[var(--primary-color)] hover:bg-[var(--accent-color)] text-white text-base font-bold leading-normal tracking-[0.015em] transition-colors shadow-md hover:shadow-lg animate-3d-adv">
               <span class="truncate">Get a Quote</span>
@@ -76,9 +76,9 @@
   <section class="relative bg-white pt-24 pb-32">
     <div class="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
       <div class="text-left">
-        <h1 class="text-6xl md:text-4xl font-extrabold text-[var(--text-primary)] mb-6 leading-tight">Information Security & Program Management Consulting</h1>
+        <h1 class="text-4xl md:text-1xl font-extrabold text-[var(--text-primary)] mb-6 leading-tight">Information Security & Program Management Consulting</h1>
         <p class="text-lg text-[var(--text-secondary)] max-w-xl mb-8">At Secusol Inc., we help organizations strengthen their information security posture while enabling smooth program and project delivery. Our team combines deep technical knowledge with proven management practices to help businesses safeguard critical assets, improve operational efficiency, and meet compliance requirements.</p>
-        <p class="text-lg text-[var(--text-secondary)] max-w-xl mb-8">Whether you are scaling operations, modernizing IT systems, or preparing for compliance audits, our experts provide tailored solutions to match your business needs.</p>
+        <!-- <p class="text-lg text-[var(--text-secondary)] max-w-xl mb-8">Whether you are scaling operations, modernizing IT systems, or preparing for compliance audits, our experts provide tailored solutions to match your business needs.</p> -->
         <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-md h-12 px-8 bg-[var(--primary-color)] hover:bg-[var(--accent-color)] text-white text-lg font-bold leading-normal tracking-[0.015em] transition-colors shadow-lg hover:shadow-xl">
           <span class="truncate">Get Started</span>
         </button>
@@ -91,116 +91,256 @@
     </div>
   </section>
 
-<section class="py-20 bg-[var(--secondary-color)]">
-  <div class="container mx-auto px-4">
-    <div class="text-center mb-16">
-      <h2 class="text-4xl font-bold text-[var(--text-primary)] mb-4">Our Core Practices</h2>
-      <p class="text-lg text-[var(--text-secondary)] max-w-3xl mx-auto">We work across a range of disciplines to deliver secure, reliable, and cost-effective results:</p>
-    </div>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-      <div class="relative group bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden min-h-[250px] flex flex-col items-center justify-center">
-        <div class="absolute inset-0 bg-center bg-cover transition-transform duration-500 transform md:group-hover:scale-105" style="background-image: url('./project\ managment.jpg');"></div>
-        <div class="absolute inset-0 bg-black opacity-40 md:group-hover:opacity-70 transition-opacity duration-300"></div>
-        <div class="relative z-10 text-center transition-transform duration-500 transform translate-y-0 md:group-hover:-translate-y-8">
-          <h3 class="text-white text-2xl font-bold leading-tight mb-2">Program Management</h3>
-        </div>
-        <div class="relative z-10 transition-all duration-500 opacity-100 md:opacity-0 md:group-hover:opacity-100 transform translate-y-0 md:translate-y-full md:group-hover:translate-y-0">
-          <p class="text-white text-sm leading-relaxed mt-4 px-4">End-to-end program and project management support — from planning and execution to governance and delivery oversight.</p>
-        </div>
-      </div>
+<section class="our-practices-section relative bg-gradient-to-br from-sky-50 via-white to-sky-100 py-16 overflow-hidden" id="Services">
+  <style>
+    /* CSS variables to match your original tokens */
+    :root {
+      --primary-color: #0ea5e9;
+      /* sky-500 */
+      --text-primary: #0f172a;
+      /* slate-900 */
+      --text-secondary: #475569;
+      /* slate-600 */
+    }
 
-      <div class="relative group bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden min-h-[250px] flex flex-col items-center justify-center">
-        <div class="absolute inset-0 bg-center bg-cover transition-transform duration-500 transform md:group-hover:scale-105" style="background-image: url('./Engineering.jpg');"></div>
-        <div class="absolute inset-0 bg-black opacity-40 md:group-hover:opacity-70 transition-opacity duration-300"></div>
-        <div class="relative z-10 text-center transition-transform duration-500 transform translate-y-0 md:group-hover:-translate-y-8">
-          <h3 class="text-white text-2xl font-bold leading-tight mb-2">Engineering & Software Development</h3>
-        </div>
-        <div class="relative z-10 transition-all duration-500 opacity-100 md:opacity-0 md:group-hover:opacity-100 transform translate-y-0 md:translate-y-full md:group-hover:translate-y-0">
-          <p class="text-white text-sm leading-relaxed mt-4 px-4">Design, development, and integration of software solutions that align with business objectives and security standards.</p>
-        </div>
-      </div>
-      
-      <div class="relative group bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden min-h-[250px] flex flex-col items-center justify-center">
-        <div class="absolute inset-0 bg-center bg-cover transition-transform duration-500 transform md:group-hover:scale-105" style="background-image: url('./Financial.jpg');"></div>
-        <div class="absolute inset-0 bg-black opacity-40 md:group-hover:opacity-70 transition-opacity duration-300"></div>
-        <div class="relative z-10 text-center transition-transform duration-500 transform translate-y-0 md:group-hover:-translate-y-8">
-          <h3 class="text-white text-2xl font-bold leading-tight mb-2">Financial & IT Operations</h3>
-        </div>
-        <div class="relative z-10 transition-all duration-500 opacity-100 md:opacity-0 md:group-hover:opacity-100 transform translate-y-0 md:translate-y-full md:group-hover:translate-y-0">
-          <p class="text-white text-sm leading-relaxed mt-4 px-4">Support for financial systems and IT operations to ensure resilience, continuity, and streamlined workflows.</p>
-        </div>
-      </div>
+    /* small entrance animation used on cards */
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(16px);
+      }
 
-      <div class="relative group bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden min-h-[250px] flex flex-col items-center justify-center">
-        <div class="absolute inset-0 bg-center bg-cover transition-transform duration-500 transform md:group-hover:scale-105" style="background-image: url('./Security.jpg');"></div>
-        <div class="absolute inset-0 bg-black opacity-40 md:group-hover:opacity-70 transition-opacity duration-300"></div>
-        <div class="relative z-10 text-center transition-transform duration-500 transform translate-y-0 md:group-hover:-translate-y-8">
-          <h3 class="text-white text-2xl font-bold leading-tight mb-2">Security & Compliance Audits</h3>
-        </div>
-        <div class="relative z-10 transition-all duration-500 opacity-100 md:opacity-0 md:group-hover:opacity-100 transform translate-y-0 md:translate-y-full md:group-hover:translate-y-0">
-          <p class="text-white text-sm leading-relaxed mt-4 px-4">Independent reviews and gap assessments to evaluate your security posture against leading frameworks and regulatory requirements.</p>
-        </div>
-      </div>
-      
-      <div class="relative group bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden min-h-[250px] flex flex-col items-center justify-center">
-        <div class="absolute inset-0 bg-center bg-cover transition-transform duration-500 transform md:group-hover:scale-105" style="background-image: url('./Database\ Security.jpg');"></div>
-        <div class="absolute inset-0 bg-black opacity-40 md:group-hover:opacity-70 transition-opacity duration-300"></div>
-        <div class="relative z-10 text-center transition-transform duration-500 transform translate-y-0 md:group-hover:-translate-y-8">
-          <h3 class="text-white text-2xl font-bold leading-tight mb-2">Database Security & Data Management</h3>
-        </div>
-        <div class="relative z-10 transition-all duration-500 opacity-100 md:opacity-0 md:group-hover:opacity-100 transform translate-y-0 md:translate-y-full md:group-hover:translate-y-0">
-          <p class="text-white text-sm leading-relaxed mt-4 px-4">Best practices for securing sensitive data, managing databases, and implementing effective data lifecycle controls.</p>
-        </div>
-      </div>
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
 
-      <div class="relative group bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden min-h-[250px] flex flex-col items-center justify-center">
-        <div class="absolute inset-0 bg-center bg-cover transition-transform duration-500 transform md:group-hover:scale-105" style="background-image: url('./Data\ Warehousing.jpg');"></div>
-        <div class="absolute inset-0 bg-black opacity-40 md:group-hover:opacity-70 transition-opacity duration-300"></div>
-        <div class="relative z-10 text-center transition-transform duration-500 transform translate-y-0 md:group-hover:-translate-y-8">
-          <h3 class="text-white text-2xl font-bold leading-tight mb-2">Data Warehousing & Business Intelligence</h3>
-        </div>
-        <div class="relative z-10 transition-all duration-500 opacity-100 md:opacity-0 md:group-hover:opacity-100 transform translate-y-0 md:translate-y-full md:group-hover:translate-y-0">
-          <p class="text-white text-sm leading-relaxed mt-4 px-4">Solutions for storing, analyzing, and visualizing data — enabling informed decision-making and actionable insights.</p>
-        </div>
-      </div>
+    .animate-fade-up {
+      animation: fadeUp 520ms cubic-bezier(.2, .9, .3, 1) both;
+    }
 
-      <div class="relative group bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden min-h-[250px] flex flex-col items-center justify-center">
-        <div class="absolute inset-0 bg-center bg-cover transition-transform duration-500 transform md:group-hover:scale-105" style="background-image: url('./Information\ Security.jpg');"></div>
-        <div class="absolute inset-0 bg-black opacity-40 md:group-hover:opacity-70 transition-opacity duration-300"></div>
-        <div class="relative z-10 text-center transition-transform duration-500 transform translate-y-0 md:group-hover:-translate-y-8">
-          <h3 class="text-white text-2xl font-bold leading-tight mb-2">Information Security & Data Protection</h3>
-        </div>
-        <div class="relative z-10 transition-all duration-500 opacity-100 md:opacity-0 md:group-hover:opacity-100 transform translate-y-0 md:translate-y-full md:group-hover:translate-y-0">
-          <p class="text-white text-sm leading-relaxed mt-4 px-4">Comprehensive security strategies, including access controls, monitoring, and policies to protect sensitive business information.</p>
-        </div>
-      </div>
-      
-      <div class="relative group bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden min-h-[250px] flex flex-col items-center justify-center">
-        <div class="absolute inset-0 bg-center bg-cover transition-transform duration-500 transform md:group-hover:scale-105" style="background-image: url('./GAP.jpg');"></div>
-        <div class="absolute inset-0 bg-black opacity-40 md:group-hover:opacity-70 transition-opacity duration-300"></div>
-        <div class="relative z-10 text-center transition-transform duration-500 transform translate-y-0 md:group-hover:-translate-y-8">
-          <h3 class="text-white text-2xl font-bold leading-tight mb-2">GAP Analysis</h3>
-        </div>
-        <div class="relative z-10 transition-all duration-500 opacity-100 md:opacity-0 md:group-hover:opacity-100 transform translate-y-0 md:translate-y-full md:group-hover:translate-y-0">
-          <p class="text-white text-sm leading-relaxed mt-4 px-4">Identification of security and operational gaps with clear, actionable recommendations for remediation.</p>
-        </div>
-      </div>
+    /* subtle card glow on focus (keyboard accessible) */
+    .focus-glow:focus {
+      outline: none;
+      box-shadow: 0 10px 30px rgba(14, 165, 233, 0.12);
+      transform: translateY(-4px) scale(1.01);
+    }
+  </style>
 
-      <div class="relative group bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden min-h-[250px] flex flex-col items-center justify-center">
-        <div class="absolute inset-0 bg-center bg-cover transition-transform duration-500 transform md:group-hover:scale-105" style="background-image: url('./Certification.webp');"></div>
-        <div class="absolute inset-0 bg-black opacity-40 md:group-hover:opacity-70 transition-opacity duration-300"></div>
-        <div class="relative z-10 text-center transition-transform duration-500 transform translate-y-0 md:group-hover:-translate-y-8">
-          <h3 class="text-white text-2xl font-bold leading-tight mb-2">Certification Support</h3>
-        </div>
-        <div class="relative z-10 transition-all duration-500 opacity-100 md:opacity-0 md:group-hover:opacity-100 transform translate-y-0 md:translate-y-full md:group-hover:translate-y-0">
-          <p class="text-white text-sm leading-relaxed mt-4 px-4">Guidance and preparation for widely recognized certifications and standards, including: *ISO 27001*, *SOC 2*, *PCI DSS*, *GDPR*.</p>
-        </div>
-      </div>
-    </div>
+  <div aria-hidden="true" class="absolute inset-0 pointer-events-none">
+    <div class="absolute -top-48 left-0 h-96 w-96 rounded-full bg-blue-200 opacity-30 blur-3xl"></div>
+    <div class="absolute -bottom-48 -right-32 h-96 w-96 rounded-full bg-cyan-200 opacity-30 blur-3xl"></div>
   </div>
+
+  <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-10">
+    <div class="content-container text-gray-800 text-center mb-16">
+      <h2 class="text-4xl sm:text-5xl font-extrabold mb-4" style="color:var(--text-primary)">Our Core Practices</h2>
+      <p class="text-lg max-w-3xl mx-auto" style="color:var(--text-secondary)">
+        We work across a range of disciplines to deliver secure, reliable, and cost-effective results:
+      </p>
+    </div>
+
+    <div role="list" class="bg-white rounded-xl shadow-sm p-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <article role="listitem" tabindex="0" class="group bg-white p-6 rounded-lg shadow-lg transform transition-all duration-300 border border-transparent hover:shadow-2xl hover:border-[var(--primary-color)] focus-glow animate-fade-up">
+        <div class="flex flex-col items-center justify-start h-full text-center">
+          <div class="mb-4 text-[var(--primary-color)]">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10 mx-auto">
+              <path fill-rule="evenodd" d="M11.828 2.25c-.968-.243-1.994-.243-2.962 0l-7.1 1.775A3.752 3.752 0 0 0 1.5 6.258v4.167c0 .878.58 1.696 1.45 1.944l.87.243c.27.075.549.112.829.112h5.05a.75.75 0 0 1 .712.513l.362 1.054a.75.75 0 0 0 .615.568l1.107.246c.4-.112.637-.5.568-.902L12 12.75l.235 1.042c-.22.426.069.916.513.712l1.054-.362a.75.75 0 0 0 .568-.615l.246-1.107c.075-.27.112-.549.112-.829V6.258a3.752 3.752 0 0 0-2.267-3.433l-7.1-1.775Z" clip-rule="evenodd" />
+              <path fill-rule="evenodd" d="M12.75 19.502L12 18.75l-.75.752a.75.75 0 0 1-1.06-1.06l1.25-1.25a.75.75 0 0 1 1.06 0l1.25 1.25a.75.75 0 0 1-1.06 1.06ZM11.25 15a.75.75 0 0 0-.75.75v1.5c0 .414.336.75.75.75h.75a.75.75 0 0 0 .75-.75v-1.5a.75.75 0 0 0-.75-.75h-.75Z" clip-rule="evenodd" />
+              <path d="M18.75 9a.75.75 0 0 0-.75.75v3h-.75a.75.75 0 0 0 0 1.5h.75v3a.75.75 0 0 0 1.5 0v-3.75h.75a.75.75 0 0 0 0-1.5h-.75V9.75a.75.75 0 0 0-.75-.75Z" />
+            </svg>
+          </div>
+          <h3 class="text-[var(--text-primary)] text-2xl font-bold leading-tight mb-2">Program Management</h3>
+          <p class="text-[var(--text-secondary)] text-sm leading-relaxed mt-4 px-2">
+            End-to-end program and project management support — from planning and execution to governance and delivery oversight.
+          </p>
+        </div>
+      </article>
+
+      <article role="listitem" tabindex="0" class="group bg-white p-6 rounded-lg shadow-lg transform transition-all duration-300 border border-transparent hover:shadow-2xl hover:border-[var(--primary-color)] focus-glow animate-fade-up" style="animation-delay:40ms">
+        <div class="flex flex-col items-center text-center">
+          <div class="mb-4 text-[var(--primary-color)]">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10 mx-auto">
+              <path fill-rule="evenodd" d="M3.528 2.923a.75.75 0 0 0-.71-.587l-2.257.564a.75.75 0 0 0-.587.71V15.75c0 1.637 1.363 3 3 3h4.75a.75.75 0 0 0 .75-.75V5.568c.28-.112.549-.247.798-.403l5.05-3.159a.75.75 0 0 0-.154-1.284l-5.188-2.61a.75.75 0 0 0-.71-.05L3.528 2.923Z" clip-rule="evenodd" />
+              <path fill-rule="evenodd" d="M10.198 19.356a.75.75 0 0 0-.109-.982L7.33 16.5l2.758-1.874a.75.75 0 0 0-.649-1.264l-3.25 2.21a.75.75 0 0 0 0 1.264l3.25 2.21a.75.75 0 0 0 .758-.05Z" clip-rule="evenodd" />
+              <path fill-rule="evenodd" d="M19.75 19.356a.75.75 0 0 0-.109-.982L17.33 16.5l2.758-1.874a.75.75 0 0 0-.649-1.264l-3.25 2.21a.75.75 0 0 0 0 1.264l3.25 2.21a.75.75 0 0 0 .758-.05Z" clip-rule="evenodd" />
+              <path fill-rule="evenodd" d="M12.75 6.75a.75.75 0 0 1 .75-.75h.75a.75.75 0 0 1 .75.75v10.5c0 .414-.336.75-.75.75H13.5a.75.75 0 0 1-.75-.75V6.75Z" clip-rule="evenodd" />
+            </svg>
+          </div>
+          <h3 class="text-[var(--text-primary)] text-2xl font-bold leading-tight mb-2">Engineering & Software Development</h3>
+          <p class="text-[var(--text-secondary)] text-sm leading-relaxed mt-4 px-2">
+            Design, development, and integration of software solutions that align with business objectives and security standards.
+          </p>
+        </div>
+      </article>
+
+      <article role="listitem" tabindex="0" class="group bg-white p-6 rounded-lg shadow-lg transform transition-all duration-300 border border-transparent hover:shadow-2xl hover:border-[var(--primary-color)] focus-glow animate-fade-up" style="animation-delay:80ms">
+        <div class="flex flex-col items-center text-center">
+          <div class="mb-4 text-[var(--primary-color)]">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10 mx-auto">
+              <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 9a.75.75 0 0 0-1.5 0v2.25H9a.75.75 0 0 0 0 1.5h2.25V15a.75.75 0 0 0 1.5 0v-2.25H15a.75.75 0 0 0 0-1.5h-2.25V9Z" clip-rule="evenodd" />
+            </svg>
+          </div>
+          <h3 class="text-[var(--text-primary)] text-2xl font-bold leading-tight mb-2">Financial & IT Operations</h3>
+          <p class="text-[var(--text-secondary)] text-sm leading-relaxed mt-4 px-2">
+            Support for financial systems and IT operations to ensure resilience, continuity, and streamlined workflows.
+          </p>
+        </div>
+      </article>
+
+      <article role="listitem" tabindex="0" class="group bg-white p-6 rounded-lg shadow-lg transform transition-all duration-300 border border-transparent hover:shadow-2xl hover:border-[var(--primary-color)] focus-glow animate-fade-up hidden sm:flex" style="animation-delay:120ms">
+        <div class="flex flex-col items-center text-center">
+          <div class="mb-4 text-[var(--primary-color)]">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10 mx-auto">
+              <path fill-rule="evenodd" d="M12.516 2.173a1.006 1.006 0 0 0-1.032 0 11.205 11.205 0 0 1-9.766 5.626c-.341.06-.693.076-1.05.076C.936 7.875 0 8.79 0 9.875v4.25c0 1.085.936 2 2.025 2h2.25C6.182 18.125 7.915 19.858 10 21.286c1.127.818 2.378 1.214 3.655 1.214a14.735 14.735 0 0 0 3.868-.535A33.684 33.684 0 0 0 24 16.25V9.875c0-1.085-.936-2-2.025-2H19.5a11.205 11.205 0 0 1-9.766-5.626ZM16.03 14.72a.75.75 0 0 0-1.06-1.06l-4.25 4.25a.75.75 0 0 0 0 1.06l1.75 1.75a.75.75 0 1 0 1.06-1.06l-1.22-1.22 3.72-3.72Z" clip-rule="evenodd" />
+            </svg>
+          </div>
+          <h3 class="text-[var(--text-primary)] text-2xl font-bold leading-tight mb-2">Security & Compliance Audits</h3>
+          <p class="text-[var(--text-secondary)] text-sm leading-relaxed mt-4 px-2">
+            Independent reviews and gap assessments to evaluate your security posture against leading frameworks and regulatory requirements.
+          </p>
+        </div>
+      </article>
+
+      <article role="listitem" tabindex="0" class="group bg-white p-6 rounded-lg shadow-lg transform transition-all duration-300 border border-transparent hover:shadow-2xl hover:border-[var(--primary-color)] focus-glow animate-fade-up hidden sm:flex" style="animation-delay:160ms">
+        <div class="flex flex-col items-center text-center">
+          <div class="mb-4 text-[var(--primary-color)]">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10 mx-auto">
+              <path fill-rule="evenodd" d="M2.25 13.5a.75.75 0 0 0 .75.75h1.5a.75.75 0 0 0 .75-.75v-9a.75.75 0 0 0-.75-.75H3a.75.75 0 0 0-.75.75v9ZM7.5 13.5a.75.75 0 0 0 .75.75h1.5a.75.75 0 0 0 .75-.75v-6a.75.75 0 0 0-.75-.75H8.25a.75.75 0 0 0-.75.75v6ZM12.75 13.5a.75.75 0 0 0 .75.75h1.5a.75.75 0 0 0 .75-.75v-3a.75.75 0 0 0-.75-.75h-1.5a.75.75 0 0 0-.75.75v3ZM18 13.5a.75.75 0 0 0 .75.75h1.5a.75.75 0 0 0 .75-.75v-10.5a.75.75 0 0 0-.75-.75H18.75a.75.75 0 0 0-.75.75v10.5Z" clip-rule="evenodd" />
+            </svg>
+          </div>
+          <h3 class="text-[var(--text-primary)] text-2xl font-bold leading-tight mb-2">Database Security & Data Management</h3>
+          <p class="text-[var(--text-secondary)] text-sm leading-relaxed mt-4 px-2">
+            Best practices for securing sensitive data, managing databases, and implementing effective data lifecycle controls.
+          </p>
+        </div>
+      </article>
+
+      <article role="listitem" tabindex="0" class="group bg-white p-6 rounded-lg shadow-lg transform transition-all duration-300 border border-transparent hover:shadow-2xl hover:border-[var(--primary-color)] focus-glow animate-fade-up hidden sm:flex" style="animation-delay:200ms">
+        <div class="flex flex-col items-center text-center">
+          <div class="mb-4 text-[var(--primary-color)]">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10 mx-auto">
+              <path fill-rule="evenodd" d="M10.5 3.75a6.75 6.75 0 1 0 0 13.5 6.75 6.75 0 0 0 0-13.5ZM2.25 10.5a8.25 8.25 0 1 1 14.59 5.358L20.53 21.365a.75.75 0 0 1-1.06 1.06l-4.72-4.72a8.25 8.25 0 0 1-5.357 1.957Z" clip-rule="evenodd" />
+            </svg>
+          </div>
+          <h3 class="text-[var(--text-primary)] text-2xl font-bold leading-tight mb-2">Data Warehousing & Business Intelligence</h3>
+          <p class="text-[var(--text-secondary)] text-sm leading-relaxed mt-4 px-2">
+            Solutions for storing, analyzing, and visualizing data — enabling informed decision-making and actionable insights.
+          </p>
+        </div>
+      </article>
+
+      <article role="listitem" tabindex="0" class="group bg-white p-6 rounded-lg shadow-lg transform transition-all duration-300 border border-transparent hover:shadow-2xl hover:border-[var(--primary-color)] focus-glow animate-fade-up hidden sm:flex" style="animation-delay:240ms">
+        <div class="flex flex-col items-center text-center">
+          <div class="mb-4 text-[var(--primary-color)]">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10 mx-auto">
+              <path fill-rule="evenodd" d="M12 1.5a5.25 5.25 0 0 0-5.25 5.25v3a.75.75 0 0 0 1.5 0V6.75a3.75 3.75 0 1 1 7.5 0v3a.75.75 0 0 0 1.5 0V6.75A5.25 5.25 0 0 0 12 1.5Z" clip-rule="evenodd" />
+              <path fill-rule="evenodd" d="M12 7.5a.75.75 0 0 1 .75.75v3a.75.75 0 0 1-1.5 0V8.25A.75.75 0 0 1 12 7.5Z" clip-rule="evenodd" />
+              <path d="M11.25 4.5a.75.75 0 0 1 .75-.75h1.5a.75.75 0 0 1 .75.75v.75H11.25V4.5Z" />
+              <path d="M12 11.25a.75.75 0 0 1 .75.75v3a.75.75 0 0 1-1.5 0v-3a.75.75 0 0 1 .75-.75Z" />
+              <path fill-rule="evenodd" d="M12 15a.75.75 0 0 1 .75.75v1.5a.75.75 0 0 1-1.5 0v-1.5a.75.75 0 0 1 .75-.75Z" clip-rule="evenodd" />
+              <path d="M12 18.75a.75.75 0 0 1 .75.75v.75H11.25v-.75a.75.75 0 0 1 .75-.75Z" />
+            </svg>
+          </div>
+          <h3 class="text-[var(--text-primary)] text-2xl font-bold leading-tight mb-2">Information Security & Data Protection</h3>
+          <p class="text-[var(--text-secondary)] text-sm leading-relaxed mt-4 px-2">
+            Comprehensive security strategies, including access controls, monitoring, and policies to protect sensitive business information.
+          </p>
+        </div>
+      </article>
+
+      <article role="listitem" tabindex="0" class="group bg-white p-6 rounded-lg shadow-lg transform transition-all duration-300 border border-transparent hover:shadow-2xl hover:border-[var(--primary-color)] focus-glow animate-fade-up hidden sm:flex" style="animation-delay:280ms">
+        <div class="flex flex-col items-center text-center">
+          <div class="mb-4 text-[var(--primary-color)]">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10 mx-auto">
+              <path fill-rule="evenodd" d="M10.5 3.75a6.75 6.75 0 1 0 0 13.5 6.75 6.75 0 0 0 0-13.5ZM2.25 10.5a8.25 8.25 0 1 1 14.59 5.358L20.53 21.365a.75.75 0 0 1-1.06 1.06l-4.72-4.72a8.25 8.25 0 0 1-5.357 1.957Z" clip-rule="evenodd" />
+            </svg>
+          </div>
+          <h3 class="text-[var(--text-primary)] text-2xl font-bold leading-tight mb-2">GAP Analysis</h3>
+          <p class="text-[var(--text-secondary)] text-sm leading-relaxed mt-4 px-2">
+            Identification of security and operational gaps with clear, actionable recommendations for remediation.
+          </p>
+        </div>
+      </article>
+
+      <article role="listitem" tabindex="0" class="group bg-white p-6 rounded-lg shadow-lg transform transition-all duration-300 border border-transparent hover:shadow-2xl hover:border-[var(--primary-color)] focus-glow animate-fade-up hidden sm:flex" style="animation-delay:320ms">
+        <div class="flex flex-col items-center text-center">
+          <div class="mb-4 text-[var(--primary-color)]">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10 mx-auto">
+              <path d="M7.5 7.5a.75.75 0 0 0 0 1.5h1.5a.75.75 0 0 0 0-1.5H7.5Z" />
+              <path d="M11.25 7.5a.75.75 0 0 0 0 1.5h1.5a.75.75 0 0 0 0-1.5h-1.5Z" />
+              <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM8.25 9.75a.75.75 0 0 0 0 1.5h.75a.75.75 0 0 0 0-1.5H8.25ZM11.25 9.75a.75.75 0 0 0 0 1.5h.75a.75.75 0 0 0 0-1.5h-.75ZM15 9.75a.75.75 0 0 0 0 1.5h.75a.75.75 0 0 0 0-1.5H15Z" clip-rule="evenodd" />
+              <path d="M8.25 12.75a.75.75 0 0 0 0 1.5h.75a.75.75 0 0 0 0-1.5H8.25ZM11.25 12.75a.75.75 0 0 0 0 1.5h.75a.75.75 0 0 0 0-1.5h-.75ZM15 12.75a.75.75 0 0 0 0 1.5h.75a.75.75 0 0 0 0-1.5H15Z" />
+            </svg>
+          </div>
+          <h3 class="text-[var(--text-primary)] text-2xl font-bold leading-tight mb-2">Certification Support</h3>
+          <p class="text-[var(--text-secondary)] text-sm leading-relaxed mt-4 px-2">
+            Guidance and preparation for widely recognized certifications and standards, including:<br><br>
+            ISO 27001<br>SOC 2<br>PCI DSS<br>GDPR
+          </p>
+        </div>
+      </article>
+    </div>
+
+    <div class="mt-8 text-center sm:hidden">
+      <button id="toggle-practices-btn" type="button" class="bg-sky-500 text-white font-bold py-2 px-6 rounded-full hover:bg-sky-600 transition-colors duration-300">
+        Show More
+      </button>
+    </div>
+
+  </div>
+
+  <script>
+    (function() {
+      const cards = document.querySelectorAll('.our-practices-section [role="listitem"]');
+      if (!('IntersectionObserver' in window)) return;
+      const obs = new IntersectionObserver((entries, o) => {
+        entries.forEach((e, i) => {
+          if (e.isIntersecting) {
+            e.target.classList.add('animate-fade-up');
+            // small stagger (uses inline style delay already provided for some)
+            e.target.style.animationDelay = (i * 40) + 'ms';
+            o.unobserve(e.target);
+          }
+        });
+      }, {
+        threshold: 0.12
+      });
+      cards.forEach(c => obs.observe(c));
+    })();
+  </script>
+
+  <script>
+    (function() {
+      // Find the button and all the article cards in the section
+      const toggleBtn = document.getElementById('toggle-practices-btn');
+      const allCards = document.querySelectorAll('.our-practices-section article');
+
+      // Check if the button exists on the page
+      if (toggleBtn) {
+        // Get only the cards that need to be hidden/shown (from the 4th card onwards)
+        const cardsToToggle = Array.from(allCards).slice(3);
+
+        toggleBtn.addEventListener('click', () => {
+          // Toggle the 'hidden' class on each of the cards
+          cardsToToggle.forEach(card => {
+            card.classList.toggle('hidden');
+          });
+
+          // Update the button text based on the new state
+          if (toggleBtn.textContent.includes('Show More')) {
+            toggleBtn.textContent = 'Show Less ⬇️ ';
+          } else {
+            toggleBtn.textContent = 'Show More ⬆️';
+          }
+        });
+      }
+    })();
+  </script>
 </section>
 
-  <section class="py-20 bg-white">
+  <section class="py-20 bg-white" id="About Us">
     <div class="container mx-auto px-4">
       <div class="text-center max-w-3xl mx-auto">
         <h2 class="text-4xl font-bold text-[var(--text-primary)] mb-4">Why Choose Secusol Inc.?</h2>
@@ -239,7 +379,7 @@
     </div>
   </section>
 
-  <section class="py-20 bg-gray-100">
+  <section class="py-20 bg-gray-100" id="Contact">
     <div class="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
       <div class="text-left">
         <div class="mb-4">
